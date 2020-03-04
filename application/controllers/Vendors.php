@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-include APPPATH . 'third_party/wc-api-php-master/vendor/autoload.php';
-use Automattic\WooCommerce\Client;
+
 
 class Vendors extends CI_Controller {
 
