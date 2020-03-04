@@ -42,6 +42,18 @@ class Products extends CI_Controller {
             redirect('products/productRequest');
         
         //get the product information here
-        
+        $woocommerce = new Client(
+            WOO_URL, 
+            WOO_CONSUMER, 
+            WOO_SECRET,
+            [
+                'version' => 'wc/v3',
+            ]
+        );
+        $product=$woocommerce->get('products/'.$id);
+        echo "<pre>";
+        print_r($product);
+        die;
+
     }
 }
