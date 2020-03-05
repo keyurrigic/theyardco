@@ -51,9 +51,11 @@ class Products extends CI_Controller {
             ]
         );
         $product=$woocommerce->get('products/'.$id);
-        echo "<pre>";
-        print_r($product);
-        die;
+        $template_data=array(
+            'main_content'=>'products/selectProduct',
+            'product'=>$product,
+        );
+        $this->load->view('templates/vendor/index',$template_data);
 
     }
 }

@@ -52,7 +52,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="<?php echo site_url('vendors/changepassword'); ?>" class="nav-link">
+            <a href="<?php echo site_url('products/productRequest'); ?>" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Product Request
